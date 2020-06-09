@@ -1,0 +1,32 @@
+
+{% if error%}
+
+
+{{ error }}
+
+{% endif%}
+
+
+
+<h1>
+    Login !
+</h1>
+
+<form method="POST" >
+
+    {% csrf_token %}
+
+    Email : 
+    <br>
+    <input type="text" name="username">
+    <br>
+    Password : 
+    <br>
+    <input type="password" name="password">
+    <br>
+    
+    
+    <br>
+    <input type="submit" value="Login">
+
+</form>

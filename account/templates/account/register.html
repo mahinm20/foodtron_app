@@ -1,0 +1,44 @@
+
+{% if error%}
+
+
+{{ error }}
+
+{% endif%}
+
+
+
+<h1>
+    FoodTron - The Food Delivery App
+</h1>
+
+<h1>
+    Register here 
+</h1>
+
+<form method="POST" action="{% url 'register' %}">
+
+{% csrf_token %}
+
+First Name:
+<input type="text" name="firstname">
+<br>
+Last name :
+<input type="text" name="lastname">
+<br>
+Email
+<input type="text" name='email'>
+<br>
+Password : 
+<br>
+<input type="password" name="password1">
+<br>
+Confirm Password : 
+<br>
+<input type="password" name="password2">
+<br>
+<!-- Address :
+<input type="textbox" name="address"> -->
+
+<input type="submit" value="Register">
+</form>
