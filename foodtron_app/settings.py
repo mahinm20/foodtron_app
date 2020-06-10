@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'foodtron_app',
     'account',
+    'restaurant',
+    
 ]
 
 MIDDLEWARE = [
